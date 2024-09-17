@@ -1,4 +1,5 @@
 ---
+import StandardFoot from '../components/StandardFoot';
 import StandardNav from '../components/StandardNav';
 import MainHead from './MainHead.astro';
 
@@ -17,7 +18,9 @@ const { title="Default Title"} = Astro.props
     <body style="background-color: pink">
         <!-- Slots are how I insert elements into templates  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <noscript>Sorry! Your browser does not support JavaScript or React</noscript>
         <StandardNav />
         <slot style="text-align: center"><p>Coming soon...</p></slot>
+        <StandardFoot />
     </body>
 </html>
