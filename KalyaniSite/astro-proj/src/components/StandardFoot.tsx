@@ -2,7 +2,7 @@ const StandardFoot = () => {
     return (
         <>
             <footer className="d-block justify-content-center bg-info">
-                <p style={{fontSize: "50px"}}className="p-5 m-auto text-danger d-flex justify-content-center"><b>Socials:</b></p>
+                <p style={{fontSize: "50px"}}className="p-5 m-auto text-black d-flex justify-content-center"><b>Socials:</b></p>
                 <div className="bg-black">
                     <ul>
                         <li style={{listStyle: "none", float: "left"}}className="m-3 p-2 d-flex justify-content-center bg-white">
