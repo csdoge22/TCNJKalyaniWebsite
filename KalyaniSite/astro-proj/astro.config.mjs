@@ -1,3 +1,4 @@
+import vercelServerless from '@astrojs/vercel/serverless';
 import { defineConfig } from 'astro/config';
 
 import react from "@astrojs/react";
@@ -11,5 +12,14 @@ export default defineConfig({
     clientPrerender: true,
     globalRoutePriority: true
   },
-  integrations: [react()]
+  integrations: [react()],
+  output: 'server',
+  adapter: vercelServerless({
+    webAnalytics: {
+      enabled: true,
+    },
+    maxDuration: 8,
+  })
 });
+
+
